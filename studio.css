@@ -1,0 +1,26 @@
+:root{--plum:#412530;--ivory:#faf7f1;--gold:#e9be8c}
+body{color:var(--plum);font-family:"Segoe UI",Arial,sans-serif}
+header{padding:19px 6vw;position:relative;background:var(--ivory);z-index:2}
+.logo{line-height:.95}.logo small{margin-top:7px}.flower{color:#a16c43}
+header nav{font-size:.93rem}.menu,.skip{display:none}
+.skip:focus{display:block;position:fixed;top:8px;left:8px;background:white;padding:12px;z-index:8}
+.skip{display:block;position:absolute;left:-9999px}
+.hero{background:radial-gradient(ellipse at 5% 100%,#51303b,var(--plum) 65%)}
+.intro{padding:clamp(48px,6.3vw,105px) 5vw clamp(50px,6.3vw,105px) 7vw}
+.hero h1{font-size:clamp(4rem,7vw,7.6rem);line-height:.98;letter-spacing:-.055em}
+.hero h1 i{color:var(--gold)}.hero figure{min-height:400px}
+.eyebrow{display:flex;align-items:center;gap:.8rem;letter-spacing:.17em}
+.eyebrow:before{content:"";width:28px;height:1px;background:currentColor}
+.btn,button{transition:background-color .15s ease;border-radius:3px}
+.btn:hover,form button:hover,#useStyle:hover{filter:brightness(1.12)}
+.card{position:relative;display:block}.card img{aspect-ratio:1.4}.card h3{font-style:italic}
+.grid{gap:clamp(16px,2.5vw,36px)}.collection,.planner,.booking{padding-block:clamp(44px,5vw,80px)}
+.result:not(:empty){border-top:1px solid #bba694;padding-top:20px}.result button{margin:5px 8px 0 0}
+.planner>*,.booking>*,form>*,.hero>*{min-width:0}
+input,textarea,select{min-width:0;max-width:100%}textarea{resize:vertical}.quote textarea{color:var(--plum)}
+.quote{overflow-wrap:anywhere}.quote #review{margin-top:18px}#rateGuide p{max-width:470px}
+dialog{width:min(480px,92vw);max-height:90dvh;overflow:auto}dialog dl{display:grid;grid-template-columns:auto 1fr;gap:8px 16px}dialog dt{font-weight:600}dialog dd{margin:0}
+:focus-visible{outline:3px solid #ae7337;outline-offset:4px}
+@media(max-width:850px){.menu{display:block;margin-left:auto;background:transparent;color:var(--plum);padding:8px 12px}header nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--ivory);padding:12px 6vw;border-block:1px solid #d8cabe}header nav.open{display:grid;gap:0}nav a{padding:10px}header{gap:10px}header>.btn{padding:9px 12px}}
+@media(max-width:720px){.hero figure{min-height:0;aspect-ratio:1.43}.intro{padding:42px 6vw}.hero h1{font-size:clamp(3.5rem,14vw,5.2rem)}.eyebrow{font-size:.74rem;letter-spacing:.13em}.card img{aspect-ratio:1.6}.grid{gap:32px}.logo{gap:5px}.heading .muted{display:block;margin-top:10px}.hero figcaption{bottom:10px;right:10px}.boardcard{max-width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
